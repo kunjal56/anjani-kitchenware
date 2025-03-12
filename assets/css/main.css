@@ -296,6 +296,8 @@ h6 {
 .header .logo img {
   max-height: 100px;
   margin-right: 100px;
+  height: 100px;
+  width: 150px;
 }
 
 .header .logo h1 {
@@ -341,6 +343,7 @@ h6 {
 
   .header .navmenu {
     order: 3;
+
   }
 }
 
@@ -486,14 +489,17 @@ h6 {
 }
 
 /* Mobile Navigation */
+
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+    color: var(--nav-color);  /* You can adjust this based on your design */
+    font-size: 40px !important;  /* Ensure the icon size is large enough */
+    
+    padding: 20px;  /* Reduced padding for better alignment */
+    line-height: 0;  /* Ensure the icon stays compact */
+    margin-right: 10px;  /* Margin to separate the icon from other elements */
+    cursor: pointer;  /* Make sure the pointer is visible on hover */
+    transition: color 0.3s;  /* Smooth transition for color change */
   }
 
   .navmenu {
@@ -510,7 +516,7 @@ h6 {
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
-    /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
+    
     box-shadow: none;
     overflow-y: auto;
     transition: 0.3s;
