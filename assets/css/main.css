@@ -207,6 +207,77 @@ h6 {
   }
 }
 
+/* Default layout (desktop) */
+#header {
+  padding: 1rem 0;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navmenu {
+  display: flex;
+}
+
+#navmenu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navmenu li {
+  margin-right: 20px;
+}
+
+#navmenu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#navmenu .active {
+  font-weight: bold;
+}
+
+/* Mobile View: Collapse nav items */
+@media (max-width: 991px) {
+  #navmenu ul {
+    display: none; /* Hide navigation by default on mobile */
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  #navmenu i.mobile-nav-toggle {
+    display: block; /* Show mobile toggle icon */
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  #navmenu.mobile-nav-active ul {
+    display: flex;
+  }
+
+  /* Button - mobile-friendly */
+  .btn-getstarted {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #navmenu a {
+    font-size: 18px; /* Larger font on mobile */
+  }
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  #navmenu ul {
+    padding-left: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
